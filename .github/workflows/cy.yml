@@ -18,8 +18,8 @@ jobs:
       - name: Compileaza si Ruleaza
         run: |
           # 1. Compilăm din folderul MAIN (acolo unde este logica programului)
-          javac src/main/java/com/mihalachecatalin/homework/UsernameValidator.java
+          javac src/test/java/com/mihalachecatalin/homework/UsernameValidator.java
           
           # 2. Rulăm clasa folosind classpath-ul către folderul main
-          echo -e "user cu spatiu\nscurt\nvalidUser123" | java -cp src/main/java com.mihalachecatalin.homework.UsernameValidator
+          echo -e "user cu spatiu\nscurt\nvalidUser123" | java -cp src/test/java com.mihalachecatalin.homework.UsernameValidator
 
