@@ -18,10 +18,10 @@ jobs:
       - name: Compileaza si Ruleaza
         run: |
           # Compilam codul sursa
-          javac src/test/java/com/catalinmihalache/homework/UsernameValidator.java
+          javac src/test/java/com/mihalachecatalin/homework/UsernameValidator.java
           
           # Trimitem input-uri automate pentru a simula utilizatorul:
           # 1. "user cu spatiu" (incorect)
           # 2. "scurt" (incorect)
           # 3. "valid123" (CORECT)
-          echo -e "user cu spatiu\nscurt\nvalid123" | java -cp src/test/java com.catalinmihalache.homework.UsernameValidator
+          echo -e "user cu spatiu\nscurt\nvalid123" | java -cp src/test/java com.mihalachecatalin.homework.UsernameValidator
