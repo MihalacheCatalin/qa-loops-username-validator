@@ -17,11 +17,11 @@ jobs:
 
       - name: Compileaza si Ruleaza
         run: |
-          # 1. Compilam din folderul cu fisierul test
+          # 1. Compilăm folosind calea fizică a folderului
           javac src/test/java/com/catalinmihalache/homework/UsernameValidator.java
           
-          # 2. Rulam folosind calea de test, dar numele de pachet corect
-          # (mihalachecatalin)
-          echo -e "user gresit\nvalid123" | java -cp src/test/java com.mihalachecatalin.homework.UsernameValidator
+          # 2. Rulăm folosind folderul radacină (src/test/java) și numele pachetului corect
+          echo -e "user gresit\nvalid123" | java -cp src/test/java com.catalinmihalache.homework.UsernameValidator
+
 
 
