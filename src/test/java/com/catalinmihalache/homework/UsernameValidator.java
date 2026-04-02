@@ -1,4 +1,4 @@
-package com.mihalachecatalin.homework;
+package com.catalinmihalache.homework;
 
 import java.util.Scanner;
 
